@@ -40,6 +40,7 @@ URL: https://godbolt.org/
 Summary of Content:
 
 Compiler Explorer allows users to observe the inner workings of their favorite programming languages. Most high-level programming languages enable us to write instructions that are easier for humans to understand. These languages use a compiler to translate code into Assembly Language (1s and 0s), enabling computers to comprehend the instructions given. Compiler Explorer showcases how different compilers handle the same code, providing insight that can empower programmers to optimize their code, especially in C and C++.
+
 Key Takeaways:
 
 Input code from your preferred programming language into the panel on the right to view the corresponding Assembly code.
