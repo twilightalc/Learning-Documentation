@@ -14,6 +14,7 @@ The PC increments (by 2 in our case) each time a new set of instructions is rece
 From the Control Unit/Decoder, a fetch signal is sent to RAM through the "Control Bus". In the simulation, the Control Bus activates a specific address in RAM, proceeding sequentially for each new instruction. The data is then sent from RAM out via the "Data Bus".
 The "Instruction Register" (IR) is where the data lands next. The IR holds instructions currently being executed by the CPU. The contents of the data are decoded to specify the "Opcode", which directs other CPU components on how to execute the instructions.
 This cycle ends with the PC incrementing and the entire process resetting.
+
 Key Takeaways:
 
 The simulation starts with the Program Counter, which tracks the cycles of the program and waits for a new set of instructions once the current cycle completes.
@@ -49,7 +50,13 @@ Personal Reflections:
 
 It was intriguing to see how many lines of Assembly code were necessary to execute a simple print("Hello World") in Python. This vividly illustrates the disparity between high-level and low-level languages. Most of the Assembly code is challenging to decipher compared to Python.
 
+
+
 Different compilers produce distinct sets of Assembly instructions from the same Python code. This demonstrates that even different compiler versions employ separate algorithms to convert the same instructions.
   ![image](https://github.com/twilightalc/Learning-Documentation/assets/164780825/cf275b19-b856-4809-a6e9-b4517c72c96c)
 
+emulsiV
 
+-Just like the previous simulation, the set of data starts from the Program counter. The information travels along the addr bus where it seems to interact with the memeory. The 4 address slots light up at once, my guess is that the data is stored with the same address in the memory until it is no longer needed. 
+
+-After the interraction with memeory, the data is sent along the data Bus where is reaches the Instructiosn reg. From what I know about the reg. they store data that the CPU can access even faster than the RAM.
