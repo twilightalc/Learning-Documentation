@@ -47,5 +47,30 @@ Compiler Explorer allows users to observe the inner workings of their favorite p
 ![Compiler Explorer](https://github.com/twilightalc/Learning-Documentation/assets/164780825/cf275b19-b856-4809-a6e9-b4517c72c96c)
 
 ## emulsiV
+
+# Components of the CPU
+
+1. **Program Counter (PC)**: 
+   - This register holds the address of the current instruction being executed.
+   - It increments by 4 (since each instruction is 4 bytes) to point to the next instruction.
+     ![image](https://github.com/user-attachments/assets/4fafbbdf-7dd3-44d9-ab63-aa26ef3f98ae)
+
+
+2. **Registers**: 
+   - Virgule has 32 general-purpose registers (x0 to x31) and special registers like the program counter (PC) and the machine exception program counter (MEPC).
+     ![image](https://github.com/user-attachments/assets/eca06aaf-aac0-4273-ade3-a39d705e082e)
+
+
+3. **Memory Organization**: 
+   - The memory is divided into different sections, with specific addresses for RAM, input/output devices, and bitmap display.
+     ![image](https://github.com/user-attachments/assets/661269c5-657b-415c-aad8-f4d49f6b7ae0)
+
+
+4. **Instruction Set**: 
+   - Virgule supports a subset of RISC-V instructions, including computational, control transfer, and memory access instructions.
+
+5. **Interrupts**: 
+   - Virgule handles interrupts by setting the program counter to a predefined address (typically address 4) and saving the return address in the MEPC register.
+
 - Just like the previous simulation, the set of data starts from the Program Counter. The information travels along the addr bus where it seems to interact with the memory. The 4 address slots light up at once; my guess is that the data is stored with the same address in the memory until it is no longer needed.
 - After the interaction with memory, the data is sent along the Data Bus where it reaches the Instruction Register. From what I know about the register, they store data that the CPU can access even faster than the RAM.
