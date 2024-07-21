@@ -5,12 +5,13 @@
 **Link Title**: [CPU Visual Simulator](https://learn.ontariotechu.ca/courses/27711/modules/items/640483)
 
 ### Summary of Content:
-The first step in the CPU simulation is the transfer of data from the "Program Counter" (PC) through the "Address Bus", where it is then loaded into an address in the RAM.  
-The PC is a register used to store memory addresses and holds the next set of instructions to be executed by the CPU.  
-The PC increments (by 2 in our case) each time a new set of instructions is received.  
-From the Control Unit/Decoder, a fetch signal is sent to RAM through the "Control Bus". In the simulation, the Control Bus activates a specific address in RAM, proceeding sequentially for each new instruction. The data is then sent from RAM out via the "Data Bus".  
-The "Instruction Register" (IR) is where the data lands next. The IR holds instructions currently being executed by the CPU. The contents of the data are decoded to specify the "Opcode", which directs other CPU components on how to execute the instructions.  
-This cycle ends with the PC incrementing and the entire process resetting.
+- The first step in the CPU simulation is the transfer of data from the "Program Counter" (PC) through the "Address Bus", where it is then loaded into an address in the RAM.  
+- The PC is a register used to store memory addresses and holds the next set of instructions to be executed by the CPU.  
+- The PC increments (by 2 in our case) each time a new set of instructions is received.  
+- From the Control Unit/Decoder, a fetch signal is sent to RAM through the "Control Bus". In the simulation, the Control Bus activates a specific address in RAM, proceeding sequentially for each new instruction. The data    is then sent from RAM out via the "Data Bus".  
+- The "Instruction Register" (IR) is where the data lands next. The IR holds instructions currently being executed by the CPU. The contents of the data are decoded to specify the "Opcode", which directs other CPU     
+  components on how to execute the instructions.  
+- This cycle ends with the PC incrementing and the entire process resetting.
 
 ### Key Takeaways:
 - The simulation starts with the Program Counter, which tracks the cycles of the program and waits for a new set of instructions once the current cycle completes.
